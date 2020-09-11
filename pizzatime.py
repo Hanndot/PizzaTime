@@ -35,15 +35,6 @@ loc.send_keys(Keys.ARROW_DOWN)
 loc.send_keys(Keys.RETURN)
 time.sleep(3)
 
-'''
-try:
-    element = WebDriverWait(browser, 5).until(
-        EC.presence_of_element_located((By.CLASS_NAME, "button button--red confirm-delivery"))
-    )
-finally:
-    browser.quit()
-'''
-
 order_now = browser.find_element_by_xpath('//*[@id="maps"]/div/div/div[1]/div[3]/div/div[4]/div/div/div/div/div/div/div/div/button')
 order_now.click()
 time.sleep(3)
@@ -114,7 +105,6 @@ while pizza_pick != "0":
         add_pizza = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div/div[1]/div[1]/div[2]/div[2]/div[1]/div/div/div[17]/div[2]/div/button')
         add_pizza.click()
 
-#time.sleep(3)
 drink = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div/div[1]/div[1]/div[2]/div[1]/div/a[6]')
 drink.click()
 drink_pick = ""
