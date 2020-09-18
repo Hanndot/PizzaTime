@@ -156,5 +156,7 @@ change.send_keys(changes)
 policy = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div[2]/div/div[2]/div/form/div[5]/div[1]')
 policy.click()
 
+order = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div[2]/div/div[2]/div/form/div[5]/div[2]/button')
+order.click()
 
 time.sleep(10)
